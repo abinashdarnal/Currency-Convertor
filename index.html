@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Project-2--Currency Exchange</title>
+  </head>
+  <body>
+    <main>
+      <div
+        class="container text-white bg-[#00000055] p-7 rounded-2xl text-sm z-[2]"
+      >
+        <div class="title text-lg text-center mb-3">CURRENCY CONVERTOR</div>
+        <form>
+          <div class="amount-section mb-3 flex flex-col">
+            <label class="mb-1">Amount :</label>
+            <input
+              type="text"
+              id="amount"
+              value="1"
+              class="border-[1px] border-[#999] bg-transparent rounded-md pl-2 focus:outline-none"
+            />
+          </div>
+          <div class="convert-box flex flex-col items-center justify-between">
+            <div class="from w-full">
+              <p class="mb-1">From :</p>
+              <div class="select-input flex">
+                <img
+                  src="https://flagcdn.com/48x36/us.png"
+                  class="max-w-[20px]"
+                />
+                <select
+                  class="w-full cursor-pointer text-[1em] bg-transparent p-3"
+                ></select>
+              </div>
+            </div>
+            <div
+              class="reverse mt-6 mb-3 text-xl rotate-[90deg] cursor-pointer active:scale-[0.9] transitio[all 0.3s ease-linear]"
+            >
+              <i class="fas fa-exchange-alt"></i>
+            </div>
+            <div class="to w-full">
+              <p class="mb-1">To :</p>
+              <div class="select-input flex">
+                <img
+                  src="https://flagcdn.com/48x36/np.png"
+                  class="max-w-[20px]"
+                />
+                <select
+                  class="w-full cursor-pointer text-[1em] bg-transparent p-3"
+                ></select>
+              </div>
+            </div>
+            <div class="result my-3">Getting Exchange Rate....</div>
+            <button class="w-full border-[1px] p-2 rounded-lg">
+              GET EXCHANGE RATE
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./country.js"></script>
+    <script src="./main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c6da838aaf.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
